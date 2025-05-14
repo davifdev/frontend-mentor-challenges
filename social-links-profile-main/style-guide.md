@@ -13,7 +13,7 @@ The designs were created to the following widths:
 
 - Green: hsl(75, 94%, 57%)
 
-- White: hsl(0, 0%, 100%)
+- White: #ffffff
 
 - Grey 700: #333333
 - Grey 800: #1f1f1f
