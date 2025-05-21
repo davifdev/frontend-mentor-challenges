@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue-500: hsl(215, 51%, 70%);
+  --blue-800: hsl(215, 32%, 27%);
+  --blue-900: hsl(216, 50%, 16%);
+  --blue-950: hsl(217, 54%, 11%);
+
+  --cyan: hsl(178, 100%, 50%);
+  --white: hsl(0, 0%, 100%);
+
+  --font: "Outfit", sans-serif;
+}
+
+body {
+  background-color: var(--blue-950);
+  font-family: var(--font);
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  padding: 4rem;
+  border-radius: 1rem;
+  background-color: hsl(218, 54%, 12%);
+}
+
+.card-nft {
+  background-color: var(--blue-900);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: var(--white);
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0px 30px 10px 20px var(--blue-950);
+  position: relative;
+}
+
+.card-img {
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.card-img img {
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.card-img:hover::after {
+  content: "";
+  position: absolute;
+  top: 23px;
+  left: 25px;
+  background: hsla(178, 100%, 50%, 0.445)url(../images/icon-view.svg) no-repeat center;
+  width: 352px;
+  height: 352px;
+  border-radius: 1rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.card-title:hover {
+  color: var(--cyan);
+}
+
+.card-description {
+  font-size: 1.2rem;
+  color: var(--blue-500);
+  margin-bottom: 0.5rem;
+}
+
+.card-ether {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.ether-balance,
+.ether-date {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.ether-balance {
+  color: var(--cyan);
+}
+
+.ether-date {
+  color: var(--blue-500);
+}
+
+.card-profile {
+  border-top: 1px solid var(--blue-800);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.profile-img {
+  background-color: var(--white);
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  padding: 0.1rem;
+}
+
+.profile-img img {
+  width: 100%;
+}
+
+.profile-name {
+  color: var(--blue-500);
+}
+
+.profile-name span {
+  color: var(--white);
+  cursor: pointer;
+}
+
+.profile-name span:hover {
+  color: var(--cyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
