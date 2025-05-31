@@ -54,7 +54,7 @@ body {
 
 .card-img img {
   border-radius: 1rem;
-  width: 100%;
+  width: 352px
 }
 
 .card-img:hover::after {
